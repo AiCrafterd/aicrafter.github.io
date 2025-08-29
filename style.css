@@ -231,4 +231,55 @@ body {
   z-index: -1;
   opacity: 0.2;
   pointer-events: none;
+
+}
+/* Магазин */
+.products {
+    display: flex;
+    flex-direction: column; /* карточки идут колонкой */
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.product {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product h3 {
+    margin: 0 0 10px;
+    font-size: 1.4em;
+    color: #4a148c; /* фиолетовый */
+}
+
+.price {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+.new-price {
+    color: #2e7d32; /* зелёный */
+    font-weight: bold;
+}
+
+.buy-btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #6200ea;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: #3700b3;
 }
